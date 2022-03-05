@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=VT323&display=swap');
+
+:root {
+    --main-bg-color: black;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+body {
+    font-family: "VT323", sans-serif;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+.nav-item {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* start header/navbar styling */
+#top  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    border-bottom: .3vw solid white;
+}
+
+#header, #title-section {
+    /*margin: 10px 0 10px 0%;*/
+    padding: 0;
+}
+
+#title-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    text-align: center;
+}
+
+#header {
+    width: 40%;
+    /*border-left: .25vw solid white;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: .5%;
+    background-color: var(--main-bg-color);
+}
+
+#socials a {
+    width: 9rem;
+    margin-right: 1rem;
+}
+
+#socials a:hover {
+    opacity: .8;
+}
+
+#logo-img:hover {
+    opacity: .8;
+}
+
+#title {
+    width: 30%;
+    letter-spacing: 5px;
+}
+
+.header-menu {
+	font-size: 2vw;
+    letter-spacing: 3px;
+    width: 10%;
+    text-align: center;
+    margin-right: 1rem
+}
+
+/* end header/navbar styling */
+
+/* start about section styling */
+
+#about {
+    padding: 30px;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-text-desktop {
+    width: 60%;
+    margin-left: 2.5%;
+    margin-right:2.5%
+}
+
+#about-gif {
+    width: 30%;
+}
+
+/* end about section styling */
+
+
+/* start team section styling */
+
+#team-members {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.team-member {
+	width: 29%;
+	margin: 2%;
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+	text-align: center;
+}
+
+.team-member img {
+	/* border: 3px solid white;
+	background-color: grey; */
+	width: 60%;
+	margin: 10px;
+	border-radius: 2px;
+    border: solid white .3vw;
+    background-color: #C6823A;
+}
+
+.team-member h3 {
+    font-size: 2.3vw !important;
+    line-height: 2.3vw !important;
+}
+
+#eth-logo {
+    font-size: 2.1vw;
+}
+
+/* end team section styling */
+
+/* Roadmap styling */
+
+.roadmap-div-1 h2, .roadmap-div-2 h2 {
+    font-size: 2.4vw !important;
+    line-height: 2.4vw !important;
+}
+
+.roadmap-text {
+    width: 60%;
+    border-bottom: .3vw solid white;
+    margin: auto;
+}
+
+.roadmap-div-1 {
+    display: inline-block;
+    width: 30%;
+}
+
+.roadmap-div-2 {
+    display: inline-block;
+    width: 40%;
+}
+
+.roadmap-div-2 .roadmap-text {
+    width: 45%;
+    border-bottom: .3vw solid white;
+    margin: auto;
+}
+
+#game-dev {
+    margin-top: 2vw;
+}
+
+/* End roadmap styling */
+
+#bottom-socials a {
+    width: 4vw;
+    height: 4vw;
+}
+
+
+@media screen and (max-width: 991px) {
+    /* start header-navbar styling */
+
+    #eth-logo {
+        font-size: 3.6vh !important;
+    }
+
+    #top {
+        display: initial;
+    }
+
+    .w-container {
+        width: 90%;
+    }
+
+    #title-section {
+        width: 100%;
+        border-right: none;
+        /*border-bottom: 5px solid white;*/
+        font-size: 4vh;
+        background-color: var(--main-bg-color);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #logo-img {
+        /*width: 50%*/
+    }
+    
+    #title {
+        width: 70%;
+        letter-spacing: 3px;
+    }
+
+    #header {
+        width: 100%;
+        border-left: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main-bg-color);
+        margin: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .header-menu {
+        font-size: 2.5vh;
+    }
+
+    #mobile-wallet-connect-div {
+        background-color:black;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /*border-bottom: 5px solid white;*/
+    }
+
+    /* end header/navbar styling */
+
+    /* start about section styling */
+
+    #about {
+        display: block;
+    }
+    
+    #about-text-mobile {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right:2.5%
+    }
+    
+    #about-gif {
+        width: 100%;
+    }
+
+    /* end about section styling */
+
+    /* start team section styling */
+
+	.team-member {
+		width: 95%;
+		margin: 0;
+        padding-bottom: 4%;
+	}
+
+    .team-member h2 {
+        font-size: 5vh !important;
+        line-height: 5vh !important;
+    }
+
+    .team-member h3 {
+        font-size: 4vh !important;
+        line-height: 4vh !important;
+    }
+
+    .team-member img {
+        border-width: 5px;
+    }
+
+    /* end team section styling */
+
+    /* Roadmap styling */
+
+    .roadmap-div-1 h2, .roadmap-div-2 h2 {
+        font-size: 4vh !important;
+        line-height: 4vh !important;
+    }
+
+    .roadmap-div-1 {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .roadmap-div-2 {
+        display: inline-block;
+        width: 100%;
+    }
+
+    /* End roadmap styling */
+
+
+    p {
+        padding: 20px;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .body-heading {
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    #bottom-socials a {
+        width: 7vh;
+        height: 7vh;
+    }
+
+}
